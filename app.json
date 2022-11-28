@@ -2,7 +2,7 @@
   "expo": {
     "name": "Dorm",
     "slug": "dormApp",
-    "version": "1.0.0",
+    "version": "2.5.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -18,21 +18,25 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "package": "com.ibits.dormApp",
+      "googleServicesFile": "./GoogleService-Info.plist"
     },
     "android": {
+      "versionCode": 2,
       "adaptiveIcon": {
         "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.joegreat.dormApp"
+      "package": "com.ibits.dormApp",
+      "googleServicesFile": "./google-services.json"
     },
     "web": {
       "favicon": "./assets/icon.png"
     },
     "extra": {
       "eas": {
-        "projectId": "62f20d51-3fe2-47e7-b00f-b46eb30b158c"
+        "projectId": "8555dba3-e94c-41e5-aed4-951e4d0ba0ce"
       }
     }
   }
