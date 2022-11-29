@@ -20,24 +20,21 @@ function wait(timeout) {
 export default function App() {
   const webViewRef = useRef();
   const [isLoadong, setLoading] = useState(false);
+[]
+ 
 
-  const handleBackButtonPress = () => {
-    try {
-      webViewRef.current?.goBack();
-    } catch (err) {
-      console.log("[handleBackButtonPress] Error : ", err.message);
-    }
-  };
 
-  useEffect(() => {
-    BackHandler.addEventListener("hardwareBackPress", handleBackButtonPress);
-    return () => {
-      BackHandler.removeEventListener(
-        "hardwareBackPress",
-        handleBackButtonPress
-      );
-    };
-  }, []);
+    BackHandler.addEventListener("hardwareBackPress", handleBackButtonPress= () => {
+      if (webViewRef) {
+        if (webViewRef.current) {
+          webViewRef.current.goBack()
+        }else{
+          // create a modall that ask user to rate the app
+        }
+      }
+      return true
+    });
+   
 
   const [refreshing, setRefreshing] = React.useState(false);
 
@@ -69,6 +66,8 @@ export default function App() {
       >
         <WebView
           originWhiteList={["*"]}
+          javaScriptEnabled={true}
+          domStorageEnabled={true}
           source={{ uri: "https://www.dorm.com.ng/v2.5/app" }}
           style={styles.container}
           ref={webViewRef}
