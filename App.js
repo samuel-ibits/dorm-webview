@@ -10,6 +10,7 @@ import {
   ScrollView,
 } from "react-native";
 import { WebView } from "react-native-webview";
+import * as StoreReview from 'expo-store-review';
 
 
 function wait(timeout) {
@@ -24,12 +25,18 @@ export default function App() {
  
 
 
-    BackHandler.addEventListener("hardwareBackPress", handleBackButtonPress= () => {
+    BackHandler.addEventListener("hardwareBackPress", handleBackButtonPress=async  () => {
       if (webViewRef) {
         if (webViewRef.current) {
           webViewRef.current.goBack()
-        }else{
+        
           // create a modall that ask user to rate the app
+          if (StoreReview.hasAction()) {
+            // you can call StoreReview.requestReview()
+
+            StoreReview.requestReview();
+          }
+        }else{
         }
       }
       return true
@@ -41,7 +48,7 @@ export default function App() {
   const onRefresh = React.useCallback(() => {
     setRefreshing(true);
     webViewRef.current.reload();
-    wait(2000).then(() => setRefreshing(false));
+    wait(1000).then(() => setRefreshing(false));
   }, [refreshing]);
 
   return (

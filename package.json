@@ -16,7 +16,9 @@
     "react-native": "0.69.6",
     "react-native-event-listeners": "^1.0.7",
     "react-native-shake": "^5.1.1",
-    "react-native-webview": "^11.23.1"
+    "react-native-webview": "^11.23.1",
+    "expo-store-review": "~5.3.0",
+    "expo-linking": "~3.2.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"
