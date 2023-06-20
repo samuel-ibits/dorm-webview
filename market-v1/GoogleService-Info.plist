@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>140860054140-6epg11648a0ods1mafmqcoj77044pee9.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.140860054140-6epg11648a0ods1mafmqcoj77044pee9</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAIsUEPej3qSm5Sg_4jr3S75DO03y36ZG8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>140860054140</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ibits.dormApp</string>
+	<key>PROJECT_ID</key>
+	<string>dorm-ca43a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>dorm-ca43a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:140860054140:ios:707d8cd475c9a3d7e447f9</string>
+</dict>
+</plist>
